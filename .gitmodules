@@ -1,0 +1,3 @@
+[submodule "js/js/WDevCore"]
+	path = js/js/WDevCore
+	url = https://github.com/Wilber1987/WDevCore.git
