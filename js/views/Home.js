@@ -2,6 +2,7 @@
 import { WRender, ComponentsManager, WAjaxTools, WArrayF } from "../WDevCore/WModules/WComponentsTools.js";
 import { StylesControlsV2, StylesControlsV3, StyleScrolls } from "../WDevCore/StyleModules/WStyleComponents.js"
 import { css } from "../WDevCore/WModules/WStyledRender.js";
+
 /**
  * @typedef {Object} ComponentConfig
  * * @property {Object} [propierty]
@@ -14,10 +15,13 @@ class Home extends HTMLElement {
     constructor(props) {
         super();
         this.attachShadow({ mode: 'open' });     
-        this.OptionContainer = WRender.Create({ className: "OptionContainer" });
+        this.OptionContainer = WRender.Create({ className: "OptionContainer" });   
         this.TabContainer = WRender.Create({ className: "TabContainer", id: 'TabContainer' });
+        this.header1 =WRender.Create({ tagName: "h1", innerText: "MI HEADER"});
         this.Manager = new ComponentsManager({ MainContainer: this.TabContainer, SPAManage: false });        
-        this.shadowRoot?.append(this.CustomStyle);        
+        this.shadowRoot?.append(this.CustomStyle); 
+        this.shadowRoot?.appendChild(this.header1)  
+        this.shadowRoot?.appendChild(WRender.Create({tagName: "h2", innerText: "header2"}))    
         this.shadowRoot?.append(
             StylesControlsV2.cloneNode(true),
             StyleScrolls.cloneNode(true),
@@ -37,7 +41,22 @@ class Home extends HTMLElement {
         this.OptionContainer.append(WRender.Create({
             tagName: 'button', className: 'Block-Primary', innerText: 'Primer panel',
             onclick: async () => this.firstPanel()
-        }))        
+        })) 
+
+        this.OptionContainer.append(WRender.Create({
+            tagName: 'button', className: 'Block-Primary', innerText: 'Primer panel2',
+            onclick: async () => this.firstPanel()
+        })) 
+
+        this.OptionContainer.append(WRender.Create({
+            tagName: 'button', className: 'Block-Primary', innerText: 'Primer panel',
+            onclick: async () => this.firstPanel()
+        })) 
+
+        this.OptionContainer.append(WRender.Create({
+            tagName: 'button', className: 'Block-Primary', innerText: 'Primer panel2',
+            onclick: async () => this.firstPanel()
+        })) 
     }
    
     CustomStyle = css`
