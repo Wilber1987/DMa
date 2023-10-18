@@ -24,4 +24,7 @@ const headerData = [
   ]
   
   export default headerData
+
+  customElements.define('w-home', Banner);
+export { Banner }
   
