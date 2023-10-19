@@ -3,6 +3,7 @@ import { WRender, ComponentsManager, WAjaxTools, WArrayF } from "../WDevCore/WMo
 import { StylesControlsV2, StylesControlsV3, StyleScrolls } from "../WDevCore/StyleModules/WStyleComponents.js"
 import { css } from "../WDevCore/WModules/WStyledRender.js";
 
+import menuItems from './header.data'
 /**
  * @typedef {Object} ComponentConfig
  * * @property {Object} [propierty]
