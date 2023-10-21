@@ -2,6 +2,45 @@ import { WRender, ComponentsManager, WAjaxTools, WArrayF } from "../WDevCore/WMo
 import { StylesControlsV2, StylesControlsV3, StyleScrolls } from "../WDevCore/StyleModules/WStyleComponents.js"
 import { css } from "../WDevCore/WModules/WStyledRender.js";
 
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand navbar-brand-centered">Brand</div>
+    </div>
+
+   
+    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Categories
+          <span class="caret"></span>
+          </a>
+        
+          <ul class="dropdown-menu multi-level" id="menu">
+          </ul>
+        
+        </li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+  
+  </div>
+  
+</nav>
+
 var JSON = {
   menu: [
   	{ name: 'Category 1', link: '0', sub: null }, 
