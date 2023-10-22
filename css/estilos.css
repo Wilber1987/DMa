@@ -1,5 +1,6 @@
 @import url(menu.css);
 @import url(banner.css);
+@import url(Carrusel);
 
 * {
    margin: 0; 
@@ -26,6 +27,12 @@
     width: 98%;
     margin: auto;
 
+ }
+
+ img {
+    display: flex;
+    cursor: pointer;
+    margin-right: 15px;
  }
 
  h1 {
