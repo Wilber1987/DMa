@@ -23,7 +23,7 @@ header label {
     left: 0;
     width: 100%;
     height: 100vh;
-    /* background: rgba(27, 2, 97, 0.9); */
+    /* background: rgba(102, 92, 131, 0.9); */
     transition: all 0.5s;
     transform: translateX(-100%);
     padding: 0%;
@@ -32,10 +32,10 @@ header label {
 
 .menu a {
     display: block;
-    color: #1e2351;
-    height: 50px;
+    color: #000000;
+    height: 40px;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid rgba(255,255,255,0,5);
 }
 

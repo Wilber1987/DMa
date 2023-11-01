@@ -7,6 +7,11 @@
     text-align: center;
     color:#fff;
     background-color: #1e2351;
+    font-weight: normal;
+    padding-top: 3%;
+   
+    padding: 20px;
+    
 }
 #blog .contenedor{
     display: flex;
