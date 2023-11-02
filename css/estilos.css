@@ -65,9 +65,64 @@
     margin-bottom: 25px;
  }
 
+footer .contenedor{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-bottom: 25px;
+   
+}
 
+.copy{
+   font-size: 20px;
+}
 
+.sociales {
+   width: 100%;
+   text-align: center;
+   font-size: 28px;
+}
+.sociales a {
+   color: #333;
+   text-decoration: none;
 
+}
+footer {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+footer p{
+   display:flex;
+   justify-content: center;
+   text-align: center;
+}
+:root{
+   --facebook: #3b5998;
+   --intagram:#515bd4, #8134af, #dd2a7b;
+   --twitter:#00acee;
+   --telegram:#0088cc ;
+   --whatsapp:#25d366 ;
+}
+
+.redes-contenedor{
+   display:flex;
+   height: 80vh;
+   
+   justify-content: center;
+}
+.redes-contenedor ul li {
+   display: inline-block;
+   margin: 5px;
+   width: 30px;
+   height: 50px;
+   text-align: center;
+}
+.redes-contenedor ul li a {
+   display: block;
+   padding: 0 5px;
+
+}
  @media (min-width:1024px) {
    .contenedor {
       width: 1000px;
