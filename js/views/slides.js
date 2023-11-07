@@ -2,14 +2,29 @@ import { WRender, ComponentsManager, WAjaxTools, WArrayF } from "../WDevCore/WMo
 import { StylesControlsV2, StylesControlsV3, StyleScrolls } from "../WDevCore/StyleModules/WStyleComponents.js"
 import { css } from "../WDevCore/WModules/WStyledRender.js";
 
-const slider = document.querySelector("#slider")
+const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider_section");
 let sliderSectionLast = sliderSection[sliderSection.length -1];
+
 
 const btnLeft = document.querySelector("#btn-left");
 const btnRight= document.querySelector("#btn-right");
 
-slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+btnLeft.addEventListener("click",e => movetoLeft())
+btnRight.addEventListener("click",e => movetoRight())
+
+let operacion = 0;
+    widthImg = 100 / sliderSection.length
+
+function movetoRight() {
+    operacion = operacion + widthImg
+    slider.style.transform = `translate(-${operacion}%)`
+}
+function movetoLef() {
+
+}
+
+/* slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
 function Next() {
     let slider_sectionFirst = document.querySelectorAll(".slide_section")[0];
@@ -38,4 +53,4 @@ btnRight.addEventListener('click', function(){
 });
 btnLeft.addEventListener('click', function(){
     Previus();
-});
+}); */

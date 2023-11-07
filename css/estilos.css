@@ -2,7 +2,7 @@
 @import url(banner.css);
 @import url(info.css);
 @import url(blog.css);
-@import url(impresion.css);
+
 @import url(slider.css);
 @import url(servicios.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
@@ -106,8 +106,8 @@ footer p{
 
 .redes-contenedor{
    display:flex;
-   height: 80vh;
-   
+   height: 20vh;
+
    justify-content: center;
 }
 .redes-contenedor ul li {
