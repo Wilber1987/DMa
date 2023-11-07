@@ -2,22 +2,27 @@
     color: #1e2351;
     text-align: center;
     padding: 20px;
+    
+   
 }
 #info .contenedor {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     
 }
 .info-img {
     margin: 20px;
+    
    
 }
 .info-img img {
     width: 180px;
     height: 180px;
-    border-radius: 50%;
-    border: 7px solid #1295c9;
+    border-radius: 40%;
+    border: 3px solid #1295c9;
+    object-fit:scale-down;
+    
 }
 
 
