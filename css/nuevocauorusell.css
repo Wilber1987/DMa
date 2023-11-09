@@ -1,0 +1,37 @@
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+element.style {
+    transition-duration: 0ms;
+}
+
+.swiper-container-android .swiper-slide, .swiper-wrapper {
+    transform: translate3d(0, 0, 0);
+}
+.swiper-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-self: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    min-height: inherit;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+/* @media (min-width: 576px)
+.text-sm-start {
+    text-align: left !important;
+} */
+
