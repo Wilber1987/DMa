@@ -3,6 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+.text h3{
+    text-align: center;
+    color:rgb(7, 164, 164);
+    /* background-color: #6d6f7e; */
+    font-weight: normal;
+    padding-top: 3%;
+    margin: 2px;
+    padding: 20px;
+    text-align: justify;
+}
 
 .container-slider{
     width: 500px;

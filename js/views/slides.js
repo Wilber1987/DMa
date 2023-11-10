@@ -19,9 +19,13 @@ let operacion = 0;
 function movetoRight() {
     operacion = operacion + widthImg
     slider.style.transform = `translate(-${operacion}%)`
+    slider.style.transition = "all ease .6s"
 }
-function movetoLef() {
-
+function movetoLeft() {
+    operacion = operacion + widthImg
+    slider.style.transform = 'translate(-${operacion}%)'
+    slider.style.transition = "all ease .6s"
+   
 }
 
 /* slider.insertAdjacentElement('afterbegin', sliderSectionLast);

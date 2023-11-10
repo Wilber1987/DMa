@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://fontawesome.com/">
-    <script src="https://kit.fontawesome.com/e8fa7aa8ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="nuevoslider.css">
 </head>
 
 <body>
@@ -21,19 +21,22 @@
             <!-- <img src="js/logo/Piña_Mesadetrabajo1.png" alt=""> -->
             <h1 class="">PIÑA BRAND STUDIO</h1>
             <input type="checkbox" id="menu-bar">
-            <label class="icon-menu"for="menu-bar"></label>
+            <label class=""for="menu-bar"><img src="js/img/bars-solid.svg" alt=""></label>
+          
             <ul class="menu">
 
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Nuestro Servicios</a>
-                    <!-- <ul class="submenu">
-                        <li><a href="">Nuestro Servicios</a></li>
-                        <li><a href="">Nuestro Servicios</a></li>
-                        <li><a href="">Nuestro Servicios</a></li>
-                    </ul> -->
+                <li class="menu_link"><a href="#banner">Inicio</a></li>
+                <li class="menu_link"><a href="#">Nuestro Servicios</a>
+                    <ul class="submenu">
+                        <li class="menu_link"><a href="#blog">Diseño Gráfico</a></li>
+                        <li class="menu_link"><a href="#info">Promocionales</a></li>
+                        <li class="menu_link"><a href="#impresion">Impresion OFFSET</a></li>
+                        <li class="menu_link"><a href="#blog1">Redes Sociales</a></li>
+                    </ul>
                 </li>
-                <li><a href="">Contáctenos</a></li>
+                <li class="menu_link"><a href="#sociales">Contáctenos</a></li>
             </ul>
+       
         </div>
     </header>
     
@@ -47,7 +50,7 @@
             <a href="#">Leer más</a>
         </div> -->
         </section>
-        <section id="title">
+       <!--  <section id="title">
             <h2>Nuestros </h2>
             <h2>Servicios</h2>
             <div class="contenedor">
@@ -68,9 +71,9 @@
             </ol>
             </div>
 
-        </section>
+        </section> -->
         <section id="blog">
-            <h2>Diseño Grafico</h2>
+            <h2>Diseño Gráfico</h2>
             <div class="contenedor">
                 <article>
                     <img src="js/img/Logo Criadero.png" alt="">
@@ -92,17 +95,23 @@
                     <img src="js/img/Cromo_Mesa de trabajo 1.png" alt="">
                     <h4>Cromo</h4>
                 </article>
-            
+                <h3 class="texto">Nuestro equipo de diseñadores gráficos talentosos
+                  transforma ideas en imágenes impactantes. Creamos
+                  logotipos, gráficos y diseños únicos que destacan
+                  tu marca y cautivan a tu audiencia, ayudándote
+                  a destacar en un mundo visualmente competitivo.</h3>
             </div>
-            <h3>Nuestro equipo de diseñadores gráficos talentosos
+            <br>
+            <!-- <h3 class="texto">Nuestro equipo de diseñadores gráficos talentosos
                 transforma ideas en imágenes impactantes. Creamos
                 logotipos, gráficos y diseños únicos que destacan
                 tu marca y cautivan a tu audiencia, ayudándote
-                a destacar en un mundo visualmente competitivo.</h3>
+                a destacar en un mundo visualmente competitivo.</h3> -->
 
         </section>
         <section id="info">
            <h2>Promocionales</h2>
+           <br>
                <!-- <a href="">Bordados</a> -->
                <!-- <a href="">Serigrafía</a> -->
                <!-- <a href="">Sublimado</a> -->
@@ -124,18 +133,24 @@
                 <div class="info-img" id="">
                 <img src="js/img/Gorra_Mesa de trabajo 1.png" alt="" />
                 </div>
+                <h3>Potenciamos tu marca a través de productos personalizados
+                  que tus clientes adorarán. Desde bolígrafos y camisetas hasta
+                  tazas y llaveros nuestros productos promocionales únicos y 
+                  personalizados, son una forma efectiva de mantener tu marca
+                  en la mente de tus clientes.
+              </h3>
             </div> 
-            <h3>Potenciamos tu marca a través de productos personalizados
+            <!-- <h3>Potenciamos tu marca a través de productos personalizados
                 que tus clientes adorarán. Desde bolígrafos y camisetas hasta
                 tazas y llaveros nuestros productos promocionales únicos y 
                 personalizados, son una forma efectiva de mantener tu marca
                 en la mente de tus clientes.
-            </h3>
+            </h3> -->
       </section>
-      
+      <section class="blog" id="impresion">
           <h2>Impresión OFFSET y Digital</h2>
           <br>
-          <h3>Desde tarjetas de presentación elegantes hasta folletos atractivos,
+          <h3 style=" text-align: justify;" >Desde tarjetas de presentación elegantes hasta folletos atractivos,
             ofrecemos servicios de impresión de alta calidad que te ayudan a destacar
             en el mundo físico. Ya sea en grandes cantidades o pequeñas tiradas,
             nuestros productos impresos transmiten profesionalismo y calidad.
@@ -158,7 +173,7 @@
             </div>
             <div class="slider_btn slider_btn--right" id="btn--right">&#62;</div>
             <div class="slider_btn slider_btn--left" id="btn-left">&#60;</div>
-
+          </section>
 
             <!-- <ul>
                 <li><img src="js/img/Rotúlos.jpg" alt=""></li>
@@ -171,25 +186,99 @@
         </div>
         <script src="slides.js"></script>
 
+        <!-- Nuevo carrousel-->
+   <!--  <div class="contenedor">
+        <div class="slider1">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide firts">
+              <img src="js/img/Rotúlos.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="js/img/Jueves de Hamburguesas.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="js/img/Menú 2023_Mesa de trabajo 1.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="js/img/Flayer_Mesa de trabajo 1.jpg" alt="">
+            </div>
+
+            <div class="nav-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+          </div>
+          <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
+        <script src="nuevoslider.js"></script>
+ -->
+
 
       
+ <section id="blog1">
+  <h2>Redes Sociales</h2>
+  <div class="contenedor">
+      <article>
+          <img src="js/img/Dale Like.jpg" alt="">
+          
+      </article>
+      <article>
+          <img src="js/img/PROMO-CALZAS.jpg" alt="">
+          
+      </article>
+      <article>
+          <img src="js/img/SE-SUPERCOOL.jpg" alt="">
+         
+      </article>
+      <article>
+          <img src="js/img/Aquí están tus burritos.jpg" alt="">
+          
+      </article>
+      <article>
+          <img src="js/img/Momentos Memorables Ingles.jpg" alt="">
+          
+      </article>
+      <article>
+        <img src="js/img/Deliciosas Ensaladas.jpg" alt="">
+        
+    </article>
+      <h3 class="texto">Potenciamos tu presencia en línea con estrategias de redes sociales ingeniosas.
+        Gestionamos tus perfiles, creamos contenido cautivador y cultivamos relaciones con audiencia.
+      Impulsamos tu marca en las redes sociales para que alcances a mas personas y generes compromiso.</h3>
+  </div>
+  <br>
+  <!-- <h3 class="texto">Nuestro equipo de diseñadores gráficos talentosos
+      transforma ideas en imágenes impactantes. Creamos
+      logotipos, gráficos y diseños únicos que destacan
+      tu marca y cautivan a tu audiencia, ayudándote
+      a destacar en un mundo visualmente competitivo.</h3> -->
+
+</section>
 
     </main>
-<br>
-<br>
 
-<br>
-<br>
-<br>
-    <footer>
+    <footer id="sociales">
         <p>Piña Brand Studio &copy; 2023</p>
         <div class="redes-contenedor">
            <ul>
-            <li><a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#" class="telegram"><i class="fa-brands fa-telegram"></i></a></li>
-            <li><a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="#" class="facebook"><img src="js/img/facebook (1).svg" alt=""></a></li>
+            <li><a href="#" class="instagram"><img src="js/img/instagram.svg" alt=""></a></li>
+            <li><a href="#" class="twitter"><img src="js/img/twitter.svg" alt=""></a></li>
+            <li><a href="#" class="telegram"><img src="js/img/telegram.svg" alt=""></a></li>
+            <li><a href="#" class="whatsapp"><img src="js/img/whatsapp.svg" alt=""></a></li>
            </ul>
            
         </div>
