@@ -4,16 +4,17 @@
     display: none;
 }
 
-header label {
+header img {
     float: right;
-    font-size: 28px;
-    margin: 6px 0;
+    width: 30px;
+    font-size: 30px;
+    margin: 5px 0;
     cursor: pointer;
 
 }
 
 .icon-menu {
-    color: #000 ;
+    color: #1e2351 ;
     
 }
 
@@ -23,7 +24,7 @@ header label {
     left: 0;
     width: 100%;
     height: 100vh;
-    /* background: rgba(102, 92, 131, 0.9); */
+    background: rgba(252, 251, 253, 0.9); 
     transition: all 0.5s;
     transform: translateX(-100%);
     padding: 0%;

@@ -3,28 +3,38 @@
     color:#1e2351;
    
 }
-h3{
-    margin: 20px;
-    text-align: center;
-    float: inline-start;
-    vertical-align: bottom;
-    margin-right: 10px;
+#text h3{
+    margin: 3px;
+    padding: 20px;
+    color:rgb(7, 164, 164);
+    font-weight: normal;
+    text-align: justify;
+    justify-content:center;
+    display: flex;
+
+    
 }
 #blog h3{
     text-align: center;
-    color:#fff;
-    background-color: #6d6f7e;
+    color:rgb(7, 164, 164);
+    /* background-color: #6d6f7e; */
     font-weight: normal;
     padding-top: 3%;
-    margin: 3px;
+    margin: 2px;
     padding: 20px;
+    text-align: justify;
+    
     
     
 }
+h2 {
+    font-size: 60px;
+}   
 #blog .contenedor{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 #blog article{

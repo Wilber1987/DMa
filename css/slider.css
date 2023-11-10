@@ -1,6 +1,17 @@
 * {
     box-sizing: border-box; 
 }
+h3{
+    margin: 3px;
+    padding: 20px;
+    color:rgb(7, 164, 164);
+    font-weight: normal;
+    text-align: justify;
+    justify-content:center;
+    display: flex;
+
+    
+}
 
 .container-slider {
     width: 70%;
@@ -68,3 +79,11 @@
        width: 800px;
     }
   }
+
+@media (min-width:480px) {
+    .contenedor-slider  {
+        width: auto;
+        height: auto;
+    }
+
+}
