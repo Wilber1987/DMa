@@ -12,6 +12,26 @@ header img {
     cursor: pointer;
 
 }
+/* nuevo 
+.nav-bar{
+    padding: 20px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 1.Sem;
+    width: 100%;
+}
+.menu .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu_link{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}*/
 
 .icon-menu {
     color: #1e2351 ;

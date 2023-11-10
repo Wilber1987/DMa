@@ -3,6 +3,11 @@
     color:#1e2351;
    
 }
+#blog1 h2,h4 {
+    text-align: center;
+    color:#1e2351;
+   
+}
 #text h3{
     margin: 3px;
     padding: 20px;
@@ -15,6 +20,19 @@
     
 }
 #blog h3{
+    text-align: center;
+    color:rgb(7, 164, 164);
+    /* background-color: #6d6f7e; */
+    font-weight: normal;
+    padding-top: 3%;
+    margin: 2px;
+    padding: 20px;
+    text-align: justify;
+    
+    
+    
+}
+#blog1 h3{
     text-align: center;
     color:rgb(7, 164, 164);
     /* background-color: #6d6f7e; */
@@ -42,6 +60,22 @@ h2 {
 }
 
 #blog img {
+    width: 100%;
+    max-width: 280px;
+}
+
+#blog1 .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#blog1 article{
+    margin: 15px;
+}
+
+#blog1 img {
     width: 100%;
     max-width: 280px;
 }
