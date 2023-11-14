@@ -4,13 +4,22 @@
     background: #1e2351;
 
 }
-img{
+#banner .banner-img{
     text-align: center;
+    display: block;
+    margin: auto;
+    align-items: center;
+    
+    
+    
 }
 
 #banner img {
     width: 40%;
     height: 40%;
+    display: block;
+    margin: auto;
+    align-items: center;
 }
 
 #banner .contenedor {
