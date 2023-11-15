@@ -3,9 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-.text h3{
+h3{
     text-align: center;
-    color:rgb(7, 164, 164);
+    color:rgb(53, 57, 57);
     /* background-color: #6d6f7e; */
     font-weight: normal;
     padding-top: 3%;

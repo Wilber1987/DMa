@@ -2,9 +2,10 @@
 
 #menu-bar {
     display: none;
+    
 }
 
-header img {
+header label {
     float: right;
     width: 30px;
     font-size: 30px;
@@ -12,6 +13,7 @@ header img {
     cursor: pointer;
 
 }
+
 /* nuevo 
 .nav-bar{
     padding: 20px;
@@ -20,27 +22,16 @@ header img {
     cursor: pointer;
     font-size: 1.Sem;
     width: 100%;
-}
+}*/
+
 .menu .submenu{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.menu_link{
-    display: block;
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-}*/
-
-.icon-menu {
-    color: #1e2351 ;
-    
-}
-
 .menu {
     position: absolute;
-    top:50px;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -48,20 +39,60 @@ header img {
     transition: all 0.5s;
     transform: translateX(-100%);
     padding: 0%;
+    
     font-family: 'Open Sans', sans-serif;
+    
+}
+.menu_link{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+}
+.menu_link:hover {
+    background: #514e4e;
+}
+.submenu .menu_link:hover {
+    background: #bbb5b5;
 }
 
-.menu a {
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.submenu .menu_link{
+    background:#6c72a6 ;
+    padding-left: 10px;
+}
+
+.menu a{
     display: block;
-    color: #000000;
+    color: #070707;
+    height: 46px;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+
+.menu_link img{
+    width: 20px;
+    height: 20px;
+    
+    object-fit:scale-down;
+}
+/* .menu a {
+    display: block;
+    color: mw#000000;
     height: 40px;
     text-decoration: none;
     padding: 10px;
     border-bottom: 1px solid rgba(255,255,255,0,5);
-}
+} */
 
 .menu a:hover {
-      background: rgba(255,255,255,0.2);
+      background: rgba(61, 57, 57, 0.2)
 }
 
 #menu-bar:checked ~ .menu {
@@ -69,19 +100,27 @@ header img {
 }
 
 .submenu {
+
     display: block;
-    color: #fff;
-    height: 50px;
+    color: #161515;
+    background: #514e4e;
+    height: 0;
     text-decoration: none;
-    padding: 15px;
+    padding-right: 50px;
     border-bottom: 1px solid rgba(255,255,255,0,5);
+   
+    transition: all 0.3s;
+    text-align: center;
+   
 }
+
+
 
 @media (min-width:1024px) {
     .menu {
         position: static;
         width: auto;
-        height: auto;
+        height: 40px;
         transform: translate(0%);
         float: right;
         display: flex;
@@ -89,25 +128,63 @@ header img {
     header label {
         display: none;
     }
+    .container-submenu{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        top: 60px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+    }
+    .container-submenu:hover .submenu{
+        opacity: 1;
+        visibility: visible;
+
+    }
 }
+@media (min-width:480px) {
+ 
+    .submenu{  
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    
+    }
+    .submenu .menu_link{
+        background:#5f6066 ;
+        padding-left: 10px;
+    }
+   
+    .container-submenu:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    
+    }
+
+} 
 * {
     margin:0px;
     padding:0px;
 }
 
-#header {
-    margin:auto;
-    width:500px;
-    font-family:Arial, Helvetica, sans-serif;
-}
 
-ul, ol {
+ul, li {
     list-style:none;
 }
 
-.nav {
-    width:500px; /*Le establecemos un ancho*/
-    margin:0 auto; /*Centramos automaticamente*/
+/* .nav {
+    width:500px; 
+    margin:0 auto; 
 }
 
 .nav > li {
@@ -143,4 +220,4 @@ ul, ol {
 .nav li ul li ul {
     right:-140px;
     top:0px;
-} 
+}    */
