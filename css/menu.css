@@ -2,9 +2,10 @@
 
 #menu-bar {
     display: none;
+    
 }
 
-header img {
+header label {
     float: right;
     width: 30px;
     font-size: 30px;
@@ -12,6 +13,7 @@ header img {
     cursor: pointer;
 
 }
+
 /* nuevo 
 .nav-bar{
     padding: 20px;
@@ -21,28 +23,15 @@ header img {
     font-size: 1.Sem;
     width: 100%;
 }*/
+
 .menu .submenu{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.menu_link{
-    display: block;
-    padding: 20px;
-    color: #070707;
-    text-decoration: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-.icon-menu {
-    color: #1e2351 ;
-    
-}
-
 .menu {
     position: absolute;
-    top:50px;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -54,14 +43,39 @@ header img {
     font-family: 'Open Sans', sans-serif;
     
 }
-a img{
-    width: 30px;
-    height: 30px;
-
-
-    object-fit:scale-down;
+.menu_link{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
 }
 
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.submenu .menu_link{
+    background:#4f59b4 ;
+    padding-left: 40px;
+}
+
+.menu a{
+    display: block;
+    color: #070707;
+    height: 46px;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+
+.menu_link img{
+    width: 20px;
+    height: 20px;
+    
+    object-fit:scale-down;
+}
 /* .menu a {
     display: block;
     color: mw#000000;
@@ -72,7 +86,7 @@ a img{
 } */
 
 .menu a:hover {
-      background: rgba(255,255,255,0.2);
+      background: rgba(61, 57, 57, 0.2)
 }
 
 #menu-bar:checked ~ .menu {
@@ -80,16 +94,20 @@ a img{
 }
 
 .submenu {
+
     display: block;
     color: #161515;
     background: #514e4e;
     height: 0;
     text-decoration: none;
-    padding-left: 50px;
+    padding-right: 50px;
     border-bottom: 1px solid rgba(255,255,255,0,5);
    
     transition: all 0.3s;
+    text-align: center;
+   
 }
+
 
 
 @media (min-width:1024px) {
@@ -104,23 +122,35 @@ a img{
     header label {
         display: none;
     }
+    .container-submenu{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        top: 60px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container-submenu:hover .submenu{
+        opacity: 0;
+        visibility: visible;
+
+    }
 }
 * {
     margin:0px;
     padding:0px;
 }
 
-#header {
-    margin:auto;
-    width:500px;
-    font-family:Arial, Helvetica, sans-serif;
-}
 
-/* ul, ol {
+ul, li {
     list-style:none;
 }
 
-.nav {
+/* .nav {
     width:500px; 
     margin:0 auto; 
 }
@@ -158,4 +188,4 @@ a img{
 .nav li ul li ul {
     right:-140px;
     top:0px;
-}  */
+}    */

@@ -21,28 +21,22 @@
             <!-- <img src="js/logo/Piña_Mesadetrabajo1.png" alt=""> -->
             <h1 class="">PIÑA BRAND STUDIO</h1>
             <input type="checkbox" id="menu-bar">
-            <label class=""for="menu-bar"><img src="js/img/bars-solid.svg" alt=""></label>
+            <label class="" for="menu-bar"><img src="js/img/bars-solid.svg" alt=""></label>
          
-            <ul class="menu_links">
+            <ul class="menu" id="menu">
                 <li class="menu_item">
-                  <a href="#banner" class="menu_link">Inicio</a>
-                </li>
-                <li class="menu_item menu_item-show">
-                  <a href="#" class="menu_link">Nuestro Servicios <img src="js/img/chevron-down-solid.svg" class="menu_icon"></a>
-
+                  <a href="#banner" class="menu_link">Inicio</a></li>
+                <li class="menu_item container-submenu">
+                  <a href="#" class="menu_link">Nuestro Servicios </a>
                     <ul class="submenu">
-                        <li class="menu_item2">
-                          <a href="#blog" class="menu_link-inside ">Diseño Gráfico</a>
-                        </li>
-                        <li class="menu_item2">
-                          <a href="#info" class="menu_link-inside">Promocionales</a>
-                        </li>
-                        <li class="menu_item2">
-                          <a href="#impresion" class="menu_link-inside">Impresion OFFSET</a>
-                        </li>
-                        <li class="menu_item2">
-                          <a href="#blog1" class="menu_link-inside">Redes Sociales</a>
-                        </li>
+                        <li class="menu_item">
+                          <a href="#blog" class="menu_link">Diseño Gráfico</a></li>
+                        <li class="menu_item">
+                          <a href="#info" class="menu_link">Promocionales</a></li>
+                        <li class="menu_item">
+                          <a href="#impresion" class="menu_link">Impresion OFFSET</a></li>
+                        <li class="menu_item">
+                          <a href="#blog1" class="menu_link">Redes Sociales</a></li>
                     </ul>
                 </li>
                 <li class="menu_item">
@@ -163,7 +157,8 @@
       <section class="blog" id="impresion">
           <h2>Impresión OFFSET y Digital</h2>
           <br>
-          <h3 color='#1295c9' style=" text-align: justify;" >Desde tarjetas de presentación elegantes hasta folletos atractivos,
+          <div class="contenedor">
+          <h3 style=" text-align: justify;" >Desde tarjetas de presentación elegantes hasta folletos atractivos,
             ofrecemos servicios de impresión de alta calidad que te ayudan a destacar
             en el mundo físico. Ya sea en grandes cantidades o pequeñas tiradas,
             nuestros productos impresos transmiten profesionalismo y calidad.
@@ -186,6 +181,10 @@
             </div>
             <div class="slider_btn slider_btn--right" id="btn--right">&#62;</div>
             <div class="slider_btn slider_btn--left" id="btn-left">&#60;</div>
+
+          </div> 
+        </div>
+        </div>
           </section>
 
             <!-- <ul>
@@ -194,9 +193,7 @@
                 <li><img src="js/img/Menú 2023_Mesa de trabajo 1.jpg" alt=""></li>
                 <li><img src="js/img/Flayer_Mesa de trabajo 1.jpg" alt=""></li>
             </ul> -->
-          </div>
         
-        </div>
         <script src="slides.js"></script>
 
         <!-- Nuevo carrousel-->
