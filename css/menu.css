@@ -50,6 +50,12 @@ header label {
     cursor: pointer;
     width: 100%;
 }
+.menu_link:hover {
+    background: #514e4e;
+}
+.submenu .menu_link:hover {
+    background: #bbb5b5;
+}
 
 .submenu{
     height: 0;
@@ -57,8 +63,8 @@ header label {
     transition: all 0.3s;
 }
 .submenu .menu_link{
-    background:#4f59b4 ;
-    padding-left: 40px;
+    background:#6c72a6 ;
+    padding-left: 10px;
 }
 
 .menu a{
@@ -133,13 +139,39 @@ header label {
         z-index: 1000;
         opacity: 0;
         visibility: hidden;
+        text-align: center;
     }
     .container-submenu:hover .submenu{
-        opacity: 0;
+        opacity: 1;
         visibility: visible;
 
     }
 }
+@media (min-width:480px) {
+ 
+    .submenu{  
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    
+    }
+    .submenu .menu_link{
+        background:#5f6066 ;
+        padding-left: 10px;
+    }
+   
+    .container-submenu:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    
+    }
+
+} 
 * {
     margin:0px;
     padding:0px;
