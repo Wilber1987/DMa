@@ -92,7 +92,7 @@ header label {
 } */
 
 .menu a:hover {
-      background: rgba(61, 57, 57, 0.2)
+      background: rgba(79, 76, 76, 0.2)
 }
 
 #menu-bar:checked ~ .menu {
@@ -160,11 +160,10 @@ header label {
     text-align: center;
     
     }
-    .submenu .menu_link{
-        background:#5f6066 ;
-        padding-left: 10px;
+    .menu_link{
+        background: #514e4e;
+
     }
-   
     .container-submenu:hover .submenu{
     opacity: 1;
     visibility: visible;
