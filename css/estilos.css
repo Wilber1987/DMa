@@ -67,7 +67,7 @@
     width: 100% ;
     margin-bottom: 25px;
  }
-#social .redes-contenedor{
+#social  a .redes-contenedor{
    top: 0;
    left: 0;
    position: fixed;
@@ -80,6 +80,8 @@
    color: #0a0a0a;
    margin: 20px;
    padding: 0;
+   gap: 10px;
+   filter:invert(0.7);
 
 }
 footer .contenedor{
