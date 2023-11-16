@@ -141,6 +141,7 @@ footer ul li{
    width: 60px;
    height: 50px;
    text-align: center;
+   object-fit: cover;
 }
 .redes-contenedor ul li a {
    display: block;
