@@ -51,7 +51,7 @@ header label {
     width: 100%;
 }
 .menu_link:hover {
-    background: #514e4e;
+    background: #d4cdcd;
 }
 .submenu .menu_link:hover {
     background: #bbb5b5;
@@ -63,7 +63,7 @@ header label {
     transition: all 0.3s;
 }
 .submenu .menu_link{
-    background:#6c72a6 ;
+    background:#d6d8e1 ;
     padding-left: 10px;
 }
 
@@ -92,7 +92,7 @@ header label {
 } */
 
 .menu a:hover {
-      background: rgba(61, 57, 57, 0.2)
+      background: rgba(113, 111, 111, 0.2)
 }
 
 #menu-bar:checked ~ .menu {
@@ -160,11 +160,7 @@ header label {
     text-align: center;
     
     }
-    .submenu .menu_link{
-        background:#5f6066 ;
-        padding-left: 10px;
-    }
-   
+    
     .container-submenu:hover .submenu{
     opacity: 1;
     visibility: visible;
